@@ -29,6 +29,7 @@ class ArrayOfStringsTest extends Specification{
 }
 
 class ArrayOfIntegersTest extends Specification with Mockito {
+  isolated
   val mockPrinter = mock[PrintStream]
   val arrayParser = new ArrayParser{
     override val printer = mockPrinter
@@ -36,6 +37,18 @@ class ArrayOfIntegersTest extends Specification with Mockito {
   "An empty array" should {
     "not print anything" in {
       arrayParser.printOddIntegers(Array())
+      there was no(mockPrinter).println(anyInt)
+    }
+  }
+  "An array with one odd integer" should {
+    "print that integer" in {
+      arrayParser.printOddIntegers(Array(1))
+      there was one(mockPrinter).println(1)
+    }
+  }
+  "An array with one even integer" should {
+    "not print that integer" in {
+      arrayParser.printOddIntegers(Array(2))
       there was no(mockPrinter).println(anyInt)
     }
   }
