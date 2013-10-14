@@ -28,7 +28,13 @@ class ArrayParser {
           if ((thisInt % 2) != 0) sum + thisInt else sum
         }
       }
-      printer.println(sumOfOdds)
+      val productOfEvens = arrayOfIntegers.foldLeft(1) {
+        (prod, thisInt) => {
+          if ((thisInt % 2) == 0) prod * thisInt else prod
+        }
+      }
+      printer.println("Sum of odds: " + sumOfOdds)
+      printer.println("Product of evens: " + productOfEvens)
     }
   }
 }

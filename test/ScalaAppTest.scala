@@ -81,28 +81,36 @@ class ArrayOfIntegersTest extends Specification with Mockito {
     "An empty array" should {
       "print nothing" in {
         arrayParser.sumOddsAndMultiplyEvens(Array())
-        there was no(mockPrinter).println(anyInt)
+        there was no(mockPrinter).println(anyString)
       }
     }
 
     "An array with one odd integer" should {
       "print that one odd integer" in {
         arrayParser.sumOddsAndMultiplyEvens(Array(1))
-        there was one(mockPrinter).println(1)
+        there was one(mockPrinter).println("Sum of odds: " + 1)
       }
     }
 
     "An array with two odd integers" should {
       "print the sum of the integers" in {
         arrayParser.sumOddsAndMultiplyEvens(Array(1,3))
-        there was one(mockPrinter).println(4)
+        there was one(mockPrinter).println("Sum of odds: " + 4)
       }
     }
 
     "An array with two odd integers and one even" should {
       "print the sum of the odd integers" in {
         arrayParser.sumOddsAndMultiplyEvens(Array(1,2,3))
-        there was one(mockPrinter).println(4)
+        there was one(mockPrinter).println("Sum of odds: " + 4)
+      }
+    }
+
+    "An array with two odd integers and two evens" should {
+      "print the sum of the odd integers and product of evens" in {
+        arrayParser.sumOddsAndMultiplyEvens(Array(1,2,3,4))
+        there was one(mockPrinter).println("Sum of odds: " + 4)
+        there was one(mockPrinter).println("Product of evens: " + 8)
       }
     }
 
