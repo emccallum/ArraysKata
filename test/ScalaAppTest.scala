@@ -69,5 +69,36 @@ class ArrayOfIntegersTest extends Specification with Mockito {
       there was one(mockPrinter).println(3)
     }
   }
-
 }
+
+  class MultipleIntegerOperationsArrayTest extends Specification with Mockito{
+    isolated
+    val mockPrinter = mock[PrintStream]
+    val arrayParser = new ArrayParser{
+      override val printer = mockPrinter
+    }
+
+    "An empty array" should {
+      "print nothing" in {
+        arrayParser.sumOddsAndMultiplyEvens(Array())
+        there was no(mockPrinter).println(anyInt)
+      }
+    }
+
+    "An array with one odd integer" should {
+      "print that one odd integer" in {
+        arrayParser.sumOddsAndMultiplyEvens(Array(1))
+        there was one(mockPrinter).println(1)
+      }
+    }
+
+    "An array with two odd integers" should {
+      "print the sum of the integers" in {
+        arrayParser.sumOddsAndMultiplyEvens(Array(1,3))
+        there was one(mockPrinter).println(4)
+      }
+    }
+
+  }
+
+

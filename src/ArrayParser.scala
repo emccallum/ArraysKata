@@ -21,4 +21,9 @@ class ArrayParser {
           printer.println(num)
   }
 
+  def sumOddsAndMultiplyEvens(arrayOfIntegers: Array[Int]) {
+    if (arrayOfIntegers.length > 0)
+      printer.println(arrayOfIntegers.sum)
+  }
+
 }
