@@ -1,7 +1,9 @@
-import collection.mutable.Stack
-import org.specs2.mutable._
 
-class ArrayParserTest extends Specification {
+import java.io.PrintStream
+import org.specs2.mutable._
+import org.specs2.mock.Mockito
+
+class ArrayOfStringsTest extends Specification{
   val ap = new ArrayParser()
 
   "An empty array" should {
@@ -24,4 +26,18 @@ class ArrayParserTest extends Specification {
       ap.findLongestString(Array("you", "hello")) must be("hello")
     }
   }
+}
+
+class ArrayOfIntegersTest extends Specification with Mockito {
+  val mockPrinter = mock[PrintStream]
+  val arrayParser = new ArrayParser{
+    override val printer = mockPrinter
+  }
+  "An empty array" should {
+    "not print anything" in {
+      arrayParser.printOddIntegers(Array())
+      there was no(mockPrinter).println(anyInt)
+    }
+  }
+
 }
