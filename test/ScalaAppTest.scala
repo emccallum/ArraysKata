@@ -60,4 +60,14 @@ class ArrayOfIntegersTest extends Specification with Mockito {
     }
   }
 
+  "An array with multiple odd integers" should {
+    "print only the odd integers" in {
+      arrayParser.printOddIntegers(Array(2, 1, 3, 4))
+      there was no(mockPrinter).println(2)
+      there was no(mockPrinter).println(4)
+      there was one(mockPrinter).println(1)
+      there was one(mockPrinter).println(3)
+    }
+  }
+
 }
