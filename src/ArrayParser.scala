@@ -23,18 +23,29 @@ class ArrayParser {
 
   def sumOddsAndMultiplyEvens(arrayOfIntegers: Array[Int]) {
     if (arrayOfIntegers.length > 0) {
-      val sumOfOdds = arrayOfIntegers.foldLeft(0) {
-        (sum, thisInt) => {
-          if ((thisInt % 2) != 0) sum + thisInt else sum
-        }
-      }
-      val productOfEvens = arrayOfIntegers.foldLeft(1) {
-        (prod, thisInt) => {
-          if ((thisInt % 2) == 0) prod * thisInt else prod
-        }
-      }
+      val sumOfOdds: Int = sumOdds(arrayOfIntegers)
+      val productOfEvens: Int = multiplyEvens(arrayOfIntegers)
       printer.println("Sum of odds: " + sumOfOdds)
       printer.println("Product of evens: " + productOfEvens)
     }
+  }
+
+
+  def multiplyEvens(arrayOfIntegers: Array[Int]): Int = {
+    val productOfEvens = arrayOfIntegers.foldLeft(1) {
+      (prod, thisInt) => {
+        if ((thisInt % 2) == 0) prod * thisInt else prod
+      }
+    }
+    productOfEvens
+  }
+
+  def sumOdds(arrayOfIntegers: Array[Int]): Int = {
+    val sumOfOdds = arrayOfIntegers.foldLeft(0) {
+      (sum, thisInt) => {
+        if ((thisInt % 2) != 0) sum + thisInt else sum
+      }
+    }
+    sumOfOdds
   }
 }
