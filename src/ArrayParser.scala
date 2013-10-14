@@ -7,18 +7,15 @@
  */
 class ArrayParser {
 
-  def returnHelloWorld()
-  :String = "Hello, world!"
-
-  def findLongestString(arr: Array[String]) :String = {
-  if (arr.length == 0) ""
-  else {
-    var currentLongestString = arr(0)
-    for(str <- arr)
-      if (str.length > currentLongestString.length)
-        currentLongestString = str
-    currentLongestString
-  }
+  def findLongestString(arr: Array[String]): String = {
+    if (arr.length == 0) ""
+    else {
+      var currentLongestString = arr(0)
+      for (str <- arr)
+        if (str.length > currentLongestString.length)
+          currentLongestString = str
+      currentLongestString
+    }
 
   }
 

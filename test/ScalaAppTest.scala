@@ -27,11 +27,7 @@ class Specs2ExamplesSpec extends Specification {
 
 class Specs2ExamplesSpec2 extends Specification {
   val ap = new ArrayParser()
-  "The main method" should {
-    "print hello world" in {
-      ap.returnHelloWorld() must be("Hello, world!")
-    }
-  }
+
   "An empty array" should {
     "return the empty string" in {
       ap.findLongestString(Array()) must be("")
