@@ -7,7 +7,8 @@
  */
 object ScalaApp {
   def main(args: Array[String]) {
-    println("Hello, world!")
+    val ap = new ArrayParser
+    ap.sumOddsAndMultiplyEvens(Array(1,2,3))
   }
 
 }

@@ -99,6 +99,13 @@ class ArrayOfIntegersTest extends Specification with Mockito {
       }
     }
 
+    "An array with two odd integers and one even" should {
+      "print the sum of the odd integers" in {
+        arrayParser.sumOddsAndMultiplyEvens(Array(1,2,3))
+        there was one(mockPrinter).println(4)
+      }
+    }
+
   }
 
 

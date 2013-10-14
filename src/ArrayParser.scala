@@ -22,8 +22,13 @@ class ArrayParser {
   }
 
   def sumOddsAndMultiplyEvens(arrayOfIntegers: Array[Int]) {
-    if (arrayOfIntegers.length > 0)
-      printer.println(arrayOfIntegers.sum)
+    if (arrayOfIntegers.length > 0) {
+      val sumOfOdds = arrayOfIntegers.foldLeft(0) {
+        (sum, thisInt) => {
+          if ((thisInt % 2) != 0) sum + thisInt else sum
+        }
+      }
+      printer.println(sumOfOdds)
+    }
   }
-
 }
