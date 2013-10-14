@@ -1,31 +1,7 @@
 import collection.mutable.Stack
 import org.specs2.mutable._
 
-
-
-/**
- * Created with IntelliJ IDEA.
- * User: Thoughtworks
- * Date: 10/14/13
- * Time: 11:04 AM
- * To change this template use File | Settings | File Templates.
- */
-
-class Specs2ExamplesSpec extends Specification {
-  "The 'Hello world' string" should {
-    "contain 11 characters" in {
-      "Hello world" must have size(11)
-    }
-    "start with 'Hello'" in {
-      "Hello world" must startWith("Hello")
-    }
-    "end with 'world'" in {
-      "Hello world" must endWith("world")
-    }
-  }
-}
-
-class Specs2ExamplesSpec2 extends Specification {
+class ArrayParserTest extends Specification {
   val ap = new ArrayParser()
 
   "An empty array" should {

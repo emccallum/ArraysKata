@@ -2,28 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bd53307-582f-4516-8cdb-15f0310a4afc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_specs2_specs2_2_10_1_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ArrayParser.scala" afterPath="$PROJECT_DIR$/src/ArrayParser.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ScalaAppTest.scala" afterPath="$PROJECT_DIR$/test/ScalaAppTest.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Scala.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/ScalaApp.scala" changelist="2bd53307-582f-4516-8cdb-15f0310a4afc" time="1381773805927" ignored="false" />
-    <file path="/ScalaAppTest.scala" changelist="2bd53307-582f-4516-8cdb-15f0310a4afc" time="1381781443870" ignored="false" />
-    <file path="$USER_HOME$/myapp/.idea/workspace.xml" changelist="2bd53307-582f-4516-8cdb-15f0310a4afc" time="1381785440989" ignored="false" />
+    <file path="/ScalaAppTest.scala" changelist="2bd53307-582f-4516-8cdb-15f0310a4afc" time="1381785705649" ignored="false" />
+    <file path="$USER_HOME$/myapp/.idea/workspace.xml" changelist="2bd53307-582f-4516-8cdb-15f0310a4afc" time="1381785770734" ignored="false" />
     <file path="/Scala.iml" changelist="2bd53307-582f-4516-8cdb-15f0310a4afc" time="1381775002784" ignored="false" />
     <file path="/ArrayParser.scala" changelist="2bd53307-582f-4516-8cdb-15f0310a4afc" time="1381784215972" ignored="false" />
-    <file path="/Dummy.txt" changelist="2bd53307-582f-4516-8cdb-15f0310a4afc" time="1381785032965" ignored="false" />
+    <file path="/Dummy.txt" changelist="2bd53307-582f-4516-8cdb-15f0310a4afc" time="1381785488155" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +85,7 @@
       <file leaf-file-name="ScalaAppTest.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/ScalaAppTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.5486111">
+            <state line="1" column="27" selection-start="59" selection-end="59" vertical-scroll-proportion="0.034722224">
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -248,7 +237,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/lib" />
   </component>
-  <component name="RunManager" selected="Specs2.Specs2ExamplesSpec2">
+  <component name="RunManager" selected="Specs2.ArrayParserTest">
     <configuration default="false" name="Specs2ExamplesSpec" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true">
       <module name="Scala" />
       <setting name="path" value="Specs2ExamplesSpec" />
@@ -279,21 +268,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="Specs2ExamplesSpec2::jessica" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true">
-      <module name="Scala" />
-      <setting name="path" value="Specs2ExamplesSpec2" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value=" -Dspecs2.ex=&quot;jessica&quot;" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="jessica" />
-      <setting name="testKind" value="Test name" />
-      <setting name="showProgressMessages" value="true" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="Specs2 in 'test'" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true">
       <module name="Scala" />
       <setting name="path" value="" />
@@ -319,6 +293,21 @@
       <setting name="searchForTest" value="Across module dependencies" />
       <setting name="testName" value="Hello, world!" />
       <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ArrayParserTest" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true">
+      <module name="Scala" />
+      <setting name="path" value="ArrayParserTest" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -448,17 +437,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Specs2.Specs2ExamplesSpec" />
       <item index="1" class="java.lang.String" itemvalue="Specs2.Specs2ExamplesSpec2" />
-      <item index="2" class="java.lang.String" itemvalue="Specs2.Specs2ExamplesSpec2::jessica" />
-      <item index="3" class="java.lang.String" itemvalue="Specs2.Specs2 in 'test'" />
-      <item index="4" class="java.lang.String" itemvalue="Specs2.Specs2ExamplesSpec2::Hello, world!" />
+      <item index="2" class="java.lang.String" itemvalue="Specs2.Specs2 in 'test'" />
+      <item index="3" class="java.lang.String" itemvalue="Specs2.Specs2ExamplesSpec2::Hello, world!" />
+      <item index="4" class="java.lang.String" itemvalue="Specs2.ArrayParserTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Specs2.Specs2ExamplesSpec2" />
-        <item index="1" class="java.lang.String" itemvalue="Specs2.Specs2ExamplesSpec2::Hello, world!" />
-        <item index="2" class="java.lang.String" itemvalue="Specs2.Specs2 in 'test'" />
-        <item index="3" class="java.lang.String" itemvalue="Specs2.Specs2ExamplesSpec" />
-        <item index="4" class="java.lang.String" itemvalue="Specs2.Specs2ExamplesSpec2::jessica" />
+        <item index="0" class="java.lang.String" itemvalue="Specs2.ArrayParserTest" />
+        <item index="1" class="java.lang.String" itemvalue="Specs2.Specs2ExamplesSpec2" />
+        <item index="2" class="java.lang.String" itemvalue="Specs2.Specs2ExamplesSpec2::Hello, world!" />
+        <item index="3" class="java.lang.String" itemvalue="Specs2.Specs2 in 'test'" />
+        <item index="4" class="java.lang.String" itemvalue="Specs2.Specs2ExamplesSpec" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -514,7 +503,11 @@
       <created>1381785037920</created>
       <updated>1381785037920</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Removing HelloWorld test">
+      <created>1381785495607</created>
+      <updated>1381785495607</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -535,8 +528,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18450184" sideWeight="0.6695779" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33042213" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18450184" sideWeight="0.6695779" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33042213" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -586,7 +579,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding .idea and lib" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing HelloWorld test" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -604,6 +597,7 @@
     <MESSAGE value="Updated ArrayParser for arrays of more than one string" />
     <MESSAGE value="Adding iml file" />
     <MESSAGE value="Adding .idea and lib" />
+    <MESSAGE value="Removing HelloWorld test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -717,7 +711,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ScalaAppTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.5486111">
+        <state line="1" column="27" selection-start="59" selection-end="59" vertical-scroll-proportion="0.034722224">
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
