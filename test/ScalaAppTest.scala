@@ -52,5 +52,12 @@ class ArrayOfIntegersTest extends Specification with Mockito {
       there was no(mockPrinter).println(anyInt)
     }
   }
+  "An array with one even, one odd integer" should {
+    "print only the odd integer" in {
+      arrayParser.printOddIntegers(Array(2, 1))
+      there was no(mockPrinter).println(2)
+      there was one(mockPrinter).println(1)
+    }
+  }
 
 }

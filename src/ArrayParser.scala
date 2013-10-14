@@ -23,8 +23,9 @@ class ArrayParser {
 
   def printOddIntegers(arr: Array[Int]) {
     if (arr.length > 0)
-      if(arr(0) % 2 != 0)
-      printer.println(arr(0))
+      for (num <- arr)
+        if (num % 2 != 0)
+          printer.println(num)
   }
 
 }
