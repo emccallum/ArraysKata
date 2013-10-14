@@ -13,9 +13,11 @@ class ArrayParser {
   def findLongestString(arr: Array[String]) :String = {
   if (arr.length == 0) ""
   else {
-    val currentLongestString = arr(0)
-
-    ""
+    var currentLongestString = arr(0)
+    for(str <- arr)
+      if (str.length > currentLongestString.length)
+        currentLongestString = str
+    currentLongestString
   }
 
   }
